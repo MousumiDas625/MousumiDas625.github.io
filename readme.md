@@ -4,7 +4,7 @@ A modern, responsive, single-page academic/research portfolio built with plain
 HTML, CSS, and JavaScript — no build step, no dependencies. Designed for PhD
 applications in robotics / reinforcement learning.
 
-🔗 **Live site (after setup):** `https://Mousumi625.github.io`
+🔗 **Live site (after setup):** `https://MousumiDas625.github.io/portfolio_mdas/`
 
 ---
 
@@ -38,34 +38,29 @@ Edit these in `index.html` (search for the placeholder text):
    - LinkedIn URL (search `linkedin.com/in/mousumi-das`)
    - Publication paper link (search `pub__link`)
    - Project links (search `card__link`)
-4. **GitHub username** is set to `Mousumi625` — change if different.
+4. **GitHub username** is set to `MousumiDas625`.
 
 ---
 
-## 🚀 Deploy to GitHub Pages (5 minutes)
+## 🚀 Deploy to GitHub Pages
 
-GitHub serves a personal site from a repo named **`<username>.github.io`**.
+This repo (`portfolio_mdas`) is already created and pushed to:
+`https://github.com/MousumiDas625/portfolio_mdas`
 
-### 1. Create the repo on GitHub
-Create a **public** repo named exactly: `Mousumi625.github.io`
-(replace with your real username if different). Leave it empty.
-
-### 2. Push this folder
+### Push new changes
 Run these in `/Users/mousumi/mousumi_portfolio`:
 
 ```bash
 git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/Mousumi625/Mousumi625.github.io.git
-git push -u origin main
+git commit -m "Update portfolio"
+git push
 ```
 
-### 3. Turn on Pages
-On GitHub: **Settings → Pages → Build and deployment → Source: "Deploy from a branch"**,
-pick branch `main`, folder `/ (root)`, and **Save**.
+### Turn on Pages
+On GitHub: open the repo → **Settings → Pages → Build and deployment →
+Source: "Deploy from a branch"**, pick branch `main`, folder `/ (root)`, and **Save**.
 
-Your site goes live in ~1 minute at **`https://Mousumi625.github.io`**.
+Your site goes live in ~1 minute at **`https://MousumiDas625.github.io/portfolio_mdas/`**.
 
 ---
 
