@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mousumi Das | Robotics &amp; Reinforcement Learning</title>
+  <meta name="description" content="Mousumi Das — Researcher in robotics, reinforcement learning, imitation learning, and robot manipulation. PhD applicant." />
+  <meta name="author" content="Mousumi Das" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Mousumi Das | Robotics & Reinforcement Learning" />
+  <meta property="og:description" content="Researcher in robotics, reinforcement learning, imitation learning, and robot manipulation." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">MD</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle color theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="navToggle" class="icon-btn nav__burger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Robotics · Reinforcement Learning · Imitation Learning</p>
+        <h1 class="hero__name">Mousumi Das</h1>
+        <p class="hero__tagline">
+          Researcher building robots that <em>learn</em> — from human demonstrations,
+          interaction, and reward — toward general, sample-efficient robot autonomy.
+        </p>
+        <p class="hero__sub">
+          M.S. in Electrical &amp; Computer Engineering (Machine Learning &amp; Data Science),
+          University of Southern California. Aspiring PhD student in robot learning.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#research">View research</a>
+          <a class="btn btn--ghost" href="assets/Mousumi_Das_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="hero__links">
+          <a href="mailto:mousumid@usc.edu" title="Email">✉ Email</a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar">🎓 Google Scholar</a>
+          <a href="https://github.com/Mousumi625" target="_blank" rel="noopener" title="GitHub">⌨ GitHub</a>
+          <a href="https://www.linkedin.com/in/mousumi-das" target="_blank" rel="noopener" title="LinkedIn">in LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Mousumi Das" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');" />
+          <span class="photo-initials">MD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01</span> About</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I am a researcher focused on <strong>robot learning</strong> — the intersection of
+              reinforcement learning, imitation learning, and robotic manipulation. My work asks how
+              robots can learn efficiently and reliably from humans: by treating demonstrations as
+              <em>pedagogical signals</em>, by selecting the right policy at the right moment, and by
+              grounding language and perception in real-world action.
+            </p>
+            <p>
+              Currently I am a Research Assistant in the <strong>LIRA Lab</strong> (Prof. Erdem Bıyık)
+              and the <strong>GLAMOR Lab</strong> (Prof. Jesse Thomason) at USC, working on
+              teacher-aware imitation learning and multi-policy evaluation for tabletop manipulation
+              with real-world deployment on a Franka Panda arm.
+            </p>
+            <p>
+              I am applying to <strong>PhD programs</strong> to deepen this research on general,
+              sample-efficient, and human-aligned robot autonomy.
+            </p>
+          </div>
+          <aside class="about__facts">
+            <h3>At a glance</h3>
+            <ul>
+              <li><span>📍</span> Los Angeles, California, USA</li>
+              <li><span>🎓</span> M.S. ECE (ML &amp; Data Science), USC</li>
+              <li><span>🤖</span> Robotics · RL · Imitation Learning</li>
+              <li><span>🦾</span> MuJoCo · robosuite · Franka Panda</li>
+              <li><span>🔬</span> LIRA Lab &amp; GLAMOR Lab</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Research Interests ===== -->
+    <section class="section section--alt" id="research">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02</span> Research Interests</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🦾</div>
+            <h3>Imitation &amp; Teacher-Aware Learning</h3>
+            <p>Modeling human demonstrations as pedagogically selected rather than reward-maximizing — a Teaching-Volume–based behavioral cloning framework for better sample efficiency.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🎯</div>
+            <h3>Reinforcement Learning</h3>
+            <p>Policy learning and offline RL (e.g. Implicit Q-Learning) for adaptive, real-time decision-making and policy selection in interactive settings.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🤖</div>
+            <h3>Robot Manipulation</h3>
+            <p>Tabletop manipulation and multi-policy evaluation across π0, OpenVLA, and keypoint controllers, with deployment on the Franka Panda arm.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🗣️</div>
+            <h3>Language-Grounded Robotics</h3>
+            <p>Grounding language in actions and multimodal observations — context-aware RAG, semantic retrieval, and instruction-tuned LLMs for adaptive interaction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03</span> Research &amp; Work Experience</h2>
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Research Assistant — LIRA Lab</h3>
+                <span class="tl-date">Jan 2026 – Present</span>
+              </div>
+              <p class="tl-org">Learning &amp; Interactive Robot Autonomy Lab · Prof. Erdem Bıyık · USC</p>
+              <ul>
+                <li>Investigating teacher-aware imitation learning by modeling human demonstrations as pedagogically selected rather than reward-maximizing, deriving a Teaching-Volume–based Behavioral Cloning framework.</li>
+                <li>Formulating and analyzing gradient-based update rules with counterfactual teacher selection distributions to evaluate whether modeling teaching intent improves sample efficiency over standard BC.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Research Assistant — GLAMOR Lab</h3>
+                <span class="tl-date">Jun 2025 – Present</span>
+              </div>
+              <p class="tl-org">Grounding Language in Actions, Multimodal Observations &amp; Robots · Prof. Jesse Thomason · USC</p>
+              <ul>
+                <li>Implementing a multi-policy evaluation framework for tabletop manipulation on the LIBERO benchmark — selecting among π0, OpenVLA, and keypoint-based controllers; real-world Franka Panda deployment in progress.</li>
+                <li>Developed a real-time policy selection algorithm using Implicit Q-Learning (IQL) for adaptive, optimal operator decision-making during wildfire evacuation dialogues.</li>
+                <li>Designed a context-aware RAG module conditioning generation on dialogue history using SBERT embeddings, FAISS retrieval, and instruction-tuned LLaMA-3 across resident personas.</li>
+                <li>Benchmarked the IQL policy-selection model against random and fixed-policy baselines, achieving higher success rates and generalization across diverse resident profiles.</li>
+                <li>Built real-time decision integration where dialogue outcomes trigger evacuation decisions and coordinate timely emergency dispatch.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Software Engineer I — GlobalLogic (Hitachi)</h3>
+                <span class="tl-date">Mar 2024 – Nov 2024</span>
+              </div>
+              <p class="tl-org">Bengaluru, India</p>
+              <ul>
+                <li>Implemented hidden-state probes on Vision-Language Model representations to approximate hallucination metrics (factuality, consistency, modality alignment).</li>
+                <li>Improved inference-time efficiency of multimodal hallucination detection by replacing heavy external evaluators with lightweight probes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Research Associate — CSU Sacramento</h3>
+                <span class="tl-date">Jul 2023 – Feb 2024</span>
+              </div>
+              <p class="tl-org">Prof. Partha S. Mohapatra · California, USA</p>
+              <ul>
+                <li>Built a multi-label classification framework using cosine similarity and BART to categorize S&amp;P BSE 500 companies' CSR contributions into 13 categories.</li>
+                <li>Retrieved SEC filings via RESTful APIs and analyzed investor risk perception via topic modeling (LDA) on 10-K reports using AWS pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="section section--alt" id="publications">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04</span> Publications</h2>
+        <div class="pub">
+          <div class="pub__marker">📄</div>
+          <div class="pub__body">
+            <p class="pub__title">Hand Gesture Recognition using DenseNet201–Mediapipe Hybrid Modelling</p>
+            <p class="pub__authors">P. Padhi and <strong>M. Das</strong></p>
+            <p class="pub__venue">2022 International Conference on Automation, Computing and Renewable Systems (ICACRS), 2022.</p>
+            <a class="pub__link" href="#" target="_blank" rel="noopener">View paper →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05</span> Selected Projects</h2>
+        <div class="cards cards--3">
+          <article class="card card--project">
+            <div class="card__tag">On-Device ML · Pruning</div>
+            <h3>Lightweight On-Device AF Detection from Single-Lead ECG</h3>
+            <p>Collaborated with UC San Diego researchers to integrate a modified Lottery Ticket Hypothesis pruning strategy across CNN and transformer architectures.</p>
+            <ul class="card__metrics">
+              <li><strong>80%</strong> model-size reduction</li>
+              <li><strong>0.92</strong> F1 maintained</li>
+            </ul>
+            <span class="card__date">Sep 2024 – Nov 2024</span>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__tag">Robotics · ASR · Vision</div>
+            <h3>Voice &amp; Vision Controlled Robotic Hand</h3>
+            <p>Robotic-hand interface using speech-to-text (ASR) for voice control and Mediapipe vision tracking to replicate human hand movements in real time.</p>
+            <a class="card__link" href="#" target="_blank" rel="noopener">Project link →</a>
+            <span class="card__date">Jan 2023 – Mar 2023</span>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__tag">Multi-Robot · Computer Vision</div>
+            <h3>Automated Sortation of Packages in a Warehouse</h3>
+            <p>Multiple bots tracked by an overhead camera using ArUco markers, receiving WiFi instructions to a microcontroller based on live location.</p>
+            <a class="card__link" href="#" target="_blank" rel="noopener">Project link →</a>
+            <span class="card__date">Oct 2021 – Jan 2022</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">06</span> Technical Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Robotics &amp; RL</h3>
+            <div class="chips">
+              <span>Reinforcement Learning</span><span>Imitation Learning</span><span>Policy Learning</span>
+              <span>Manipulation</span><span>MuJoCo</span><span>robosuite</span><span>LIBERO</span>
+              <span>Franka Panda</span><span>Implicit Q-Learning</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Machine Learning</h3>
+            <div class="chips">
+              <span>Deep Learning</span><span>Computer Vision</span><span>NLP</span>
+              <span>RAG</span><span>OpenVLA</span><span>π0</span><span>LLaMA-3</span><span>SBERT</span><span>FAISS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Programming &amp; Tools</h3>
+            <div class="chips">
+              <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span>
+              <span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+              <span>SQL</span><span>Git</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">07</span> Education</h2>
+        <div class="edu">
+          <div class="edu__head">
+            <h3>University of Southern California</h3>
+            <span class="tl-date">Jan 2025 – Dec 2026</span>
+          </div>
+          <p class="edu__degree">M.S. in Electrical &amp; Computer Engineering — Machine Learning &amp; Data Science</p>
+          <p class="edu__courses">
+            <strong>Relevant coursework:</strong> Robot Learning (CSCI 699), Robot Mobility (EE 579),
+            Deep Learning (EE 541), Linear Algebra for Engineering (EE 510),
+            Probability for Electrical &amp; Computer Engineers (EE 503).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <h2 class="section__title"><span class="section__num">08</span> Get in Touch</h2>
+        <p class="contact__lead">
+          I'm always happy to discuss robot learning, research collaborations, and PhD opportunities.
+        </p>
+        <div class="contact__links">
+          <a class="contact__card" href="mailto:mousumid@usc.edu">
+            <span class="contact__icon">✉</span>
+            <span><strong>Email</strong><br>mousumid@usc.edu</span>
+          </a>
+          <a class="contact__card" href="https://github.com/Mousumi625" target="_blank" rel="noopener">
+            <span class="contact__icon">⌨</span>
+            <span><strong>GitHub</strong><br>@Mousumi625</span>
+          </a>
+          <a class="contact__card" href="https://scholar.google.com/" target="_blank" rel="noopener">
+            <span class="contact__icon">🎓</span>
+            <span><strong>Google Scholar</strong><br>Publications</span>
+          </a>
+          <a class="contact__card" href="https://www.linkedin.com/in/mousumi-das" target="_blank" rel="noopener">
+            <span class="contact__icon">in</span>
+            <span><strong>LinkedIn</strong><br>Mousumi Das</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Mousumi Das · Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
