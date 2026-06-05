@@ -4,7 +4,7 @@ A modern, responsive, single-page academic/research portfolio built with plain
 HTML, CSS, and JavaScript — no build step, no dependencies. Designed for PhD
 applications in robotics / reinforcement learning.
 
-🔗 **Live site (after setup):** `https://MousumiDas625.github.io/portfolio_mdas/`
+🔗 **Live site:** `https://mousumidas625.github.io/`
 
 ---
 
@@ -44,8 +44,8 @@ Edit these in `index.html` (search for the placeholder text):
 
 ## 🚀 Deploy to GitHub Pages
 
-This repo (`portfolio_mdas`) is already created and pushed to:
-`https://github.com/MousumiDas625/portfolio_mdas`
+This repo (`MousumiDas625.github.io`) is already created and pushed to:
+`https://github.com/MousumiDas625/MousumiDas625.github.io`
 
 ### Push new changes
 Run these in `/Users/mousumi/mousumi_portfolio`:
@@ -60,7 +60,7 @@ git push
 On GitHub: open the repo → **Settings → Pages → Build and deployment →
 Source: "Deploy from a branch"**, pick branch `main`, folder `/ (root)`, and **Save**.
 
-Your site goes live in ~1 minute at **`https://MousumiDas625.github.io/portfolio_mdas/`**.
+Your site goes live in ~1 minute at **`https://mousumidas625.github.io/`**.
 
 ---
 
