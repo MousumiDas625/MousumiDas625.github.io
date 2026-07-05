@@ -224,6 +224,8 @@ em { color: var(--accent); font-style: normal; }
 .pub__authors { color: var(--text-dim); font-size: 0.92rem; margin: 0.25rem 0; }
 .pub__venue { color: var(--text-faint); font-size: 0.88rem; font-style: italic; }
 .pub__link { display: inline-block; margin-top: 0.6rem; font-weight: 600; font-size: 0.9rem; }
+.pub + .pub { margin-top: 1rem; }
+.pub-note { margin-top: 1rem; font-size: 0.82rem; color: var(--text-faint); }
 
 /* ===== Skills ===== */
 .skills { display: grid; gap: 1.5rem; }

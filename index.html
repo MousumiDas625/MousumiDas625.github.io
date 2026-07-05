@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mousumi Das | Robotics &amp; Reinforcement Learning</title>
-  <meta name="description" content="Mousumi Das — Researcher in robotics, reinforcement learning, imitation learning, and robot manipulation. PhD applicant." />
+  <meta name="description" content="Mousumi Das — Researcher in robot learning, imitation learning, VLA policy routing, and language-guided robotics. PhD applicant." />
   <meta name="author" content="Mousumi Das" />
 
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="Mousumi Das | Robotics & Reinforcement Learning" />
-  <meta property="og:description" content="Researcher in robotics, reinforcement learning, imitation learning, and robot manipulation." />
+  <meta property="og:description" content="Researcher in robot learning, imitation learning, VLA policy routing, and language-guided robotics." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +46,7 @@
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__inner">
       <div class="hero__text">
-        <p class="hero__eyebrow">Robotics · Reinforcement Learning · Imitation Learning</p>
+        <p class="hero__eyebrow">Robot Learning · Imitation Learning · VLAs · Embodied AI</p>
         <h1 class="hero__name">Mousumi Das</h1>
         <p class="hero__tagline">
           Researcher building robots that <em>learn</em> — from human demonstrations,
@@ -62,9 +62,9 @@
         </div>
         <div class="hero__links">
           <a href="mailto:mousumid@usc.edu" title="Email">✉ Email</a>
-          <a href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar">🎓 Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=vk9HwnEAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar">🎓 Google Scholar</a>
           <a href="https://github.com/MousumiDas625" target="_blank" rel="noopener" title="GitHub">⌨ GitHub</a>
-          <a href="https://www.linkedin.com/in/mousumi-das" target="_blank" rel="noopener" title="LinkedIn">in LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mousumi-das-2a6135154/" target="_blank" rel="noopener" title="LinkedIn">in LinkedIn</a>
         </div>
       </div>
       <div class="hero__photo">
@@ -85,16 +85,20 @@
           <div class="about__text">
             <p>
               I am a researcher focused on <strong>robot learning</strong> — the intersection of
-              reinforcement learning, imitation learning, and robotic manipulation. My work asks how
-              robots can learn efficiently and reliably from humans: by treating demonstrations as
-              <em>pedagogical signals</em>, by selecting the right policy at the right moment, and by
-              grounding language and perception in real-world action.
+              imitation learning, reinforcement learning, and robotic manipulation. My work asks how
+              robots can learn efficiently and reliably: by exploiting the <em>structure</em> in expert
+              demonstrations, by dynamically composing policies at execution time, and by grounding
+              language and perception in real-world action.
             </p>
             <p>
-              Currently I am a Research Assistant in the <strong>LIRA Lab</strong> (Prof. Erdem Bıyık)
-              and the <strong>GLAMOR Lab</strong> (Prof. Jesse Thomason) at USC, working on
-              teacher-aware imitation learning and multi-policy evaluation for tabletop manipulation
-              with real-world deployment on a Franka Panda arm.
+              I am currently a Research Intern at the <strong>Georgia Tech Research Institute (GTRI)</strong>,
+              building vision-based pick-selection systems for deformable objects. At USC, I work in the
+              <strong><a href="https://liralab.usc.edu/" target="_blank" rel="noopener">LIRA Lab</a></strong>
+              (Prof. Erdem Bıyık) on <em>TV-BC</em>, a teaching-volume–weighted imitation learning method,
+              and in the
+              <strong><a href="https://glamor-usc.github.io/" target="_blank" rel="noopener">GLAMOR Lab</a></strong>
+              (Prof. Jesse Thomason) on <em>SWAP</em>, a stepwise policy-routing framework for
+              vision-language-action models deployed on the Franka Panda arm.
             </p>
             <p>
               I am applying to <strong>PhD programs</strong> to deepen this research on general,
@@ -104,11 +108,12 @@
           <aside class="about__facts">
             <h3>At a glance</h3>
             <ul>
-              <li><span>📍</span> Los Angeles, California, USA</li>
+              <li><span>📍</span> Atlanta, GA / Los Angeles, CA, USA</li>
               <li><span>🎓</span> M.S. ECE (ML &amp; Data Science), USC</li>
-              <li><span>🤖</span> Robotics · RL · Imitation Learning</li>
-              <li><span>🦾</span> MuJoCo · robosuite · Franka Panda</li>
-              <li><span>🔬</span> LIRA Lab &amp; GLAMOR Lab</li>
+              <li><span>🤖</span> Robot Learning · IL · RL · VLAs</li>
+              <li><span>🦾</span> Franka Panda · LIBERO · DROID · MuJoCo</li>
+              <li><span>🔬</span> GTRI · LIRA Lab · GLAMOR Lab</li>
+              <li><span>📄</span> 4 academic works (SIGDIAL, CoRL, ICLR, IEEE)</li>
             </ul>
           </aside>
         </div>
@@ -122,23 +127,28 @@
         <div class="cards">
           <article class="card">
             <div class="card__icon">🦾</div>
-            <h3>Imitation &amp; Teacher-Aware Learning</h3>
-            <p>Modeling human demonstrations as pedagogically selected rather than reward-maximizing — a Teaching-Volume–based behavioral cloning framework for better sample efficiency.</p>
+            <h3>Robot Learning &amp; Imitation Learning</h3>
+            <p>Leveraging structure in expert demonstrations — pedagogical intent and per-example informativeness — for sample-efficient, OOD-robust manipulation policies.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🎯</div>
-            <h3>Reinforcement Learning</h3>
-            <p>Policy learning and offline RL (e.g. Implicit Q-Learning) for adaptive, real-time decision-making and policy selection in interactive settings.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">🤖</div>
-            <h3>Robot Manipulation</h3>
-            <p>Tabletop manipulation and multi-policy evaluation across π0, OpenVLA, and keypoint controllers, with deployment on the Franka Panda arm.</p>
+            <div class="card__icon">🔀</div>
+            <h3>VLA Composition &amp; Policy Routing</h3>
+            <p>Dynamically composing multiple VLA and control policies during execution via offline RL, with evaluation pipelines spanning tabletop and real-world manipulation.</p>
           </article>
           <article class="card">
             <div class="card__icon">🗣️</div>
-            <h3>Language-Grounded Robotics</h3>
-            <p>Grounding language in actions and multimodal observations — context-aware RAG, semantic retrieval, and instruction-tuned LLMs for adaptive interaction.</p>
+            <h3>Language-Guided Robotics &amp; Embodied AI</h3>
+            <p>Dialogue-driven, RAG-augmented, and language-conditioned policies for embodied decision-making, scene understanding, and vision-language navigation.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">👁️</div>
+            <h3>Vision-Grounded Perception for Manipulation</h3>
+            <p>Scalable perception pipelines spanning instance segmentation, conditioned image synthesis, and vision-language grounding for contact-rich robot tasks.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🧠</div>
+            <h3>Vision-Language Models &amp; VLAs</h3>
+            <p>Reliability of VLM/VLA backbones via hidden-state probing, lightweight evaluators, and behavior-grounded benchmarks.</p>
           </article>
         </div>
       </div>
@@ -147,8 +157,23 @@
     <!-- ===== Experience ===== -->
     <section class="section" id="experience">
       <div class="container">
-        <h2 class="section__title"><span class="section__num">03</span> Research &amp; Work Experience</h2>
+        <h2 class="section__title"><span class="section__num">03</span> Research Experience</h2>
         <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Research Intern — Georgia Tech Research Institute (GTRI)</h3>
+                <span class="tl-date">May 2026 – Present</span>
+              </div>
+              <p class="tl-org">Intelligent Robotics &amp; Autonomous Systems · PI: Colin Usher · Atlanta, GA</p>
+              <ul>
+                <li>Designing a vision-based pick-selection system for deformable objects by decoupling perception from selection via three frozen foundation models: SAM2 (instance segmentation), DINOv2 (768-dim embeddings augmented with geometric depth features), and AnyGrasp (6-DOF grasp generation).</li>
+                <li>Trained a pairwise ranking MLP via a RankNet objective on VR operator demonstrations as the sole learned component; deployed with a human-in-the-loop adaptation loop where corrections trigger lightweight ranker updates over a rolling replay buffer, enabling environment-agnostic continuous improvement without scheduled retraining.</li>
+              </ul>
+            </div>
+          </div>
 
           <div class="tl-item">
             <div class="tl-dot"></div>
@@ -157,10 +182,10 @@
                 <h3>Research Assistant — LIRA Lab</h3>
                 <span class="tl-date">Jan 2026 – Present</span>
               </div>
-              <p class="tl-org">Learning &amp; Interactive Robot Autonomy Lab · Prof. Erdem Bıyık · USC</p>
+              <p class="tl-org"><a href="https://liralab.usc.edu/" target="_blank" rel="noopener">Learning &amp; Interactive Robot Autonomy Lab</a> · PI: Prof. Erdem Bıyık · USC</p>
               <ul>
-                <li>Investigating teacher-aware imitation learning by modeling human demonstrations as pedagogically selected rather than reward-maximizing, deriving a Teaching-Volume–based Behavioral Cloning framework.</li>
-                <li>Formulating and analyzing gradient-based update rules with counterfactual teacher selection distributions to evaluate whether modeling teaching intent improves sample efficiency over standard BC.</li>
+                <li>Developing TV-BC (Teaching-Volume Behavioral Cloning), an imitation learning method that upweights demonstrations where learner loss exceeds expert loss, prioritizing hard, informative examples via a softmax-weighted BC loss derived from machine teaching theory.</li>
+                <li>Evaluated TV-BC vs. standard BC on three Procgen CoinRun settings (single-level, in-distribution, OOD) using an IMPALA ResNet expert and a 373K-parameter CNN learner; achieved +21.7% early-round solve-rate gain, +16.7% OOD advantage at peak, 4× lower cross-seed variance in OOD, and winning all 3 seeds at the final in-distribution round.</li>
               </ul>
             </div>
           </div>
@@ -172,43 +197,12 @@
                 <h3>Research Assistant — GLAMOR Lab</h3>
                 <span class="tl-date">Jun 2025 – Present</span>
               </div>
-              <p class="tl-org">Grounding Language in Actions, Multimodal Observations &amp; Robots · Prof. Jesse Thomason · USC</p>
+              <p class="tl-org"><a href="https://glamor-usc.github.io/" target="_blank" rel="noopener">Grounding Language in Actions, Multimodal Observations &amp; Robots</a> · PI: Prof. Jesse Thomason · USC</p>
               <ul>
-                <li>Implementing a multi-policy evaluation framework for tabletop manipulation on the LIBERO benchmark — selecting among π0, OpenVLA, and keypoint-based controllers; real-world Franka Panda deployment in progress.</li>
-                <li>Developed a real-time policy selection algorithm using Implicit Q-Learning (IQL) for adaptive, optimal operator decision-making during wildfire evacuation dialogues.</li>
-                <li>Designed a context-aware RAG module conditioning generation on dialogue history using SBERT embeddings, FAISS retrieval, and instruction-tuned LLaMA-3 across resident personas.</li>
-                <li>Benchmarked the IQL policy-selection model against random and fixed-policy baselines, achieving higher success rates and generalization across diverse resident profiles.</li>
-                <li>Built real-time decision integration where dialogue outcomes trigger evacuation decisions and coordinate timely emergency dispatch.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <div class="tl-head">
-                <h3>Software Engineer I — GlobalLogic (Hitachi)</h3>
-                <span class="tl-date">Mar 2024 – Nov 2024</span>
-              </div>
-              <p class="tl-org">Bengaluru, India</p>
-              <ul>
-                <li>Implemented hidden-state probes on Vision-Language Model representations to approximate hallucination metrics (factuality, consistency, modality alignment).</li>
-                <li>Improved inference-time efficiency of multimodal hallucination detection by replacing heavy external evaluators with lightweight probes.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <div class="tl-head">
-                <h3>Research Associate — CSU Sacramento</h3>
-                <span class="tl-date">Jul 2023 – Feb 2024</span>
-              </div>
-              <p class="tl-org">Prof. Partha S. Mohapatra · California, USA</p>
-              <ul>
-                <li>Built a multi-label classification framework using cosine similarity and BART to categorize S&amp;P BSE 500 companies' CSR contributions into 13 categories.</li>
-                <li>Retrieved SEC filings via RESTful APIs and analyzed investor risk perception via topic modeling (LDA) on 10-K reports using AWS pipelines.</li>
+                <li>Designed SWAP (Stepwise Action Policy Routing) for dynamically composing multiple VLA policies during execution; formulated routing as offline RL, training a routing critic that selects among π0, OpenVLA, and keypoint-based controllers per decision step. Evaluated on real-world DROID and LIBERO; up to +33% task success and −28.3% trajectory length vs. fixed-policy and routing baselines.</li>
+                <li>Built the multi-policy evaluation infrastructure for tabletop manipulation on the LIBERO benchmark with real-world deployment on the Franka Panda arm; integrated contrast-set perturbations and conformal prediction to improve hidden-state probe failure detection under deployment-time distribution shifts.</li>
+                <li>Developed a real-time policy selection algorithm using Implicit Q-Learning (IQL) for adaptive operator decision-making during wildfire evacuation dialogues; outperformed random and fixed-policy baselines across diverse resident profiles.</li>
+                <li>Designed a context-aware RAG module conditioning response generation on dialogue history via SBERT embeddings, FAISS retrieval, and instruction-tuned LLaMA-3; integrated end-to-end so dialogue outcomes trigger evacuation decisions and emergency dispatch.</li>
               </ul>
             </div>
           </div>
@@ -220,16 +214,47 @@
     <!-- ===== Publications ===== -->
     <section class="section section--alt" id="publications">
       <div class="container">
-        <h2 class="section__title"><span class="section__num">04</span> Publications</h2>
+        <h2 class="section__title"><span class="section__num">04</span> Academic Works</h2>
+
+        <div class="pub">
+          <div class="pub__marker">📄</div>
+          <div class="pub__body">
+            <p class="pub__title">Imitation Learning from Deliberative Teachers</p>
+            <p class="pub__authors"><strong>Mousumi Das</strong>, Erdem Bıyık</p>
+            <p class="pub__venue">In preparation. Target: ICLR 2026.</p>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub__marker">📄</div>
+          <div class="pub__body">
+            <p class="pub__title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</p>
+            <p class="pub__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, Abrar Anwar, Jesse Thomason</p>
+            <p class="pub__venue">Submitted to CoRL 2026.</p>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub__marker">📄</div>
+          <div class="pub__body">
+            <p class="pub__title">DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents</p>
+            <p class="pub__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, Abrar Anwar, Jesse Thomason, David Traum</p>
+            <p class="pub__venue">SIGDIAL 2026 — ACL/ISCA Special Interest Group on Discourse and Dialogue.</p>
+            <a class="pub__link" href="https://arxiv.org/abs/2607.01557" target="_blank" rel="noopener">View paper →</a>
+          </div>
+        </div>
+
         <div class="pub">
           <div class="pub__marker">📄</div>
           <div class="pub__body">
             <p class="pub__title">Hand Gesture Recognition using DenseNet201–Mediapipe Hybrid Modelling</p>
-            <p class="pub__authors">P. Padhi and <strong>M. Das</strong></p>
-            <p class="pub__venue">2022 International Conference on Automation, Computing and Renewable Systems (ICACRS), 2022.</p>
-            <a class="pub__link" href="#" target="_blank" rel="noopener">View paper →</a>
+            <p class="pub__authors">Prachetas Padhi*, <strong>Mousumi Das</strong>*</p>
+            <p class="pub__venue">2022 International Conference on Automation, Computing and Renewable Systems (ICACRS), IEEE, 2022.</p>
+            <a class="pub__link" href="https://doi.org/10.1109/ICACRS55517.2022.10029038" target="_blank" rel="noopener">View paper →</a>
           </div>
         </div>
+
+        <p class="pub-note">* denotes equal contribution.</p>
       </div>
     </section>
 
@@ -239,29 +264,28 @@
         <h2 class="section__title"><span class="section__num">05</span> Selected Projects</h2>
         <div class="cards cards--3">
           <article class="card card--project">
-            <div class="card__tag">On-Device ML · Pruning</div>
-            <h3>Lightweight On-Device AF Detection from Single-Lead ECG</h3>
-            <p>Collaborated with UC San Diego researchers to integrate a modified Lottery Ticket Hypothesis pruning strategy across CNN and transformer architectures.</p>
-            <ul class="card__metrics">
-              <li><strong>80%</strong> model-size reduction</li>
-              <li><strong>0.92</strong> F1 maintained</li>
-            </ul>
-            <span class="card__date">Sep 2024 – Nov 2024</span>
+            <div class="card__tag">VLMs · Interpretability</div>
+            <h3>Hidden-State Probing for VLM Hallucination Detection</h3>
+            <p>Hidden-state probes on VLM representations approximating hallucination metrics (factuality, consistency, modality alignment), replacing heavy external evaluators with lightweight linear probes; benchmarked on MHaluBench with dashboards for cross-modal error analysis across VLM checkpoints.</p>
+            <span class="card__date">Mar 2025 – May 2025</span>
           </article>
 
           <article class="card card--project">
             <div class="card__tag">Robotics · ASR · Vision</div>
             <h3>Voice &amp; Vision Controlled Robotic Hand</h3>
-            <p>Robotic-hand interface using speech-to-text (ASR) for voice control and Mediapipe vision tracking to replicate human hand movements in real time.</p>
-            <a class="card__link" href="#" target="_blank" rel="noopener">Project link →</a>
+            <p>Robotic-hand interface combining ASR (speech-to-text) for voice control with Mediapipe landmark tracking for real-time gesture replication; encoded finger-joint angles to servo commands via microcontroller, achieving sub-100 ms end-to-end latency.</p>
+            <a class="card__link" href="https://github.com/Prachetas007/Hand-Gesture-replication-using-Robotic-Hand" target="_blank" rel="noopener">Project link →</a>
             <span class="card__date">Jan 2023 – Mar 2023</span>
           </article>
 
           <article class="card card--project">
             <div class="card__tag">Multi-Robot · Computer Vision</div>
             <h3>Automated Sortation of Packages in a Warehouse</h3>
-            <p>Multiple bots tracked by an overhead camera using ArUco markers, receiving WiFi instructions to a microcontroller based on live location.</p>
-            <a class="card__link" href="#" target="_blank" rel="noopener">Project link →</a>
+            <p>Coordinated a swarm of mobile bots tracked via ArUco markers and an overhead camera, with A* path planning and WiFi-relayed routing commands to onboard microcontrollers.</p>
+            <ul class="card__metrics">
+              <li><strong>35%</strong> faster sort cycles vs. fixed-route baseline</li>
+            </ul>
+            <a class="card__link" href="https://drive.google.com/drive/folders/1EI_0FFL16Qe7nqsvs6HzAtitk76sC6wz" target="_blank" rel="noopener">Project link →</a>
             <span class="card__date">Oct 2021 – Jan 2022</span>
           </article>
         </div>
@@ -274,26 +298,62 @@
         <h2 class="section__title"><span class="section__num">06</span> Technical Skills</h2>
         <div class="skills">
           <div class="skill-group">
-            <h3>Robotics &amp; RL</h3>
+            <h3>Programming</h3>
             <div class="chips">
-              <span>Reinforcement Learning</span><span>Imitation Learning</span><span>Policy Learning</span>
-              <span>Manipulation</span><span>MuJoCo</span><span>robosuite</span><span>LIBERO</span>
-              <span>Franka Panda</span><span>Implicit Q-Learning</span>
+              <span>Python</span><span>C++</span><span>SQL</span><span>Bash/Shell</span><span>MATLAB</span><span>Git</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Machine Learning</h3>
+            <h3>Robot Frameworks &amp; Simulation</h3>
             <div class="chips">
-              <span>Deep Learning</span><span>Computer Vision</span><span>NLP</span>
-              <span>RAG</span><span>OpenVLA</span><span>π0</span><span>LLaMA-3</span><span>SBERT</span><span>FAISS</span>
+              <span>ROS 2</span><span>MoveIt 2</span><span>LeRobot</span><span>IsaacGym</span>
+              <span>Isaac Sim / Isaac Lab</span><span>Gazebo</span><span>MuJoCo</span><span>robosuite</span>
+              <span>LIBERO</span><span>DROID</span><span>Franka Control Interface</span><span>Gymnasium</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Programming &amp; Tools</h3>
+            <h3>Perception &amp; Scene Understanding</h3>
             <div class="chips">
-              <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span>
-              <span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
-              <span>SQL</span><span>Git</span><span>AWS</span>
+              <span>SAM2</span><span>DINOv2</span><span>CLIP</span><span>SigLIP</span><span>GroundingDINO</span>
+              <span>Open3D</span><span>OpenCV</span><span>RealSense SDK</span><span>MMDetection</span>
+              <span>Mediapipe</span><span>DepthAnything</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>VLAs &amp; Foundation Models</h3>
+            <div class="chips">
+              <span>OpenVLA</span><span>π0</span><span>MolmoAct</span><span>Octo</span><span>AnyGrasp</span>
+              <span>LLaMA-3</span><span>SBERT</span><span>FAISS</span><span>LangChain</span>
+              <span>RAG pipelines</span><span>BART</span><span>LoRA / QLoRA</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>RL &amp; Policy Learning</h3>
+            <div class="chips">
+              <span>IQL</span><span>SAC</span><span>PPO</span><span>IMPALA</span><span>HER</span>
+              <span>Behavioral Cloning</span><span>DAgger</span><span>Diffusion Policy</span>
+              <span>ACT</span><span>Offline RL</span><span>Reward Modeling</span><span>RLHF</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>ML / DL &amp; Tooling</h3>
+            <div class="chips">
+              <span>PyTorch</span><span>TensorFlow</span><span>Hugging Face Transformers</span>
+              <span>Scikit-learn</span><span>JAX (basic)</span><span>Weights &amp; Biases</span>
+              <span>HDF5</span><span>Docker</span><span>AWS (S3, EC2, SageMaker)</span><span>RESTful APIs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>NLP &amp; Language Grounding</h3>
+            <div class="chips">
+              <span>spaCy</span><span>SentenceTransformers</span><span>Gensim (LDA)</span>
+              <span>Intent Classification</span><span>NLTK</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Hardware</h3>
+            <div class="chips">
+              <span>Franka Panda arm</span><span>Arduino / ESP32</span><span>Servo / Stepper Motor Control</span>
             </div>
           </div>
         </div>
@@ -335,11 +395,11 @@
             <span class="contact__icon">⌨</span>
             <span><strong>GitHub</strong><br>@MousumiDas625</span>
           </a>
-          <a class="contact__card" href="https://scholar.google.com/" target="_blank" rel="noopener">
+          <a class="contact__card" href="https://scholar.google.com/citations?user=vk9HwnEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
             <span class="contact__icon">🎓</span>
             <span><strong>Google Scholar</strong><br>Publications</span>
           </a>
-          <a class="contact__card" href="https://www.linkedin.com/in/mousumi-das" target="_blank" rel="noopener">
+          <a class="contact__card" href="https://www.linkedin.com/in/mousumi-das-2a6135154/" target="_blank" rel="noopener">
             <span class="contact__icon">in</span>
             <span><strong>LinkedIn</strong><br>Mousumi Das</span>
           </a>
