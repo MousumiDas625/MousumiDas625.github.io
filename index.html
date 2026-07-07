@@ -22,7 +22,7 @@
   <!-- ===== Navigation ===== -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#top" class="nav__brand">MD</a>
+      <span class="nav__brand-spacer"></span>
       <nav class="nav__links" id="navLinks">
         <a href="#news">News</a>
         <a href="#research">Research</a>
@@ -163,7 +163,115 @@
       <div class="container">
         <h2 class="section__title">Research</h2>
 
-        <h3 class="research__subtitle">Interests</h3>
+        <h3 class="research__subtitle">Publications</h3>
+
+        <article class="paper">
+          <h3 class="paper__title">Foundation-Model Pick Selection for Deformable Objects with Human-in-the-Loop Ranking</h3>
+          <div class="paper__media paper__slideshow" data-interval="1000">
+            <img src="assets/gtri/gtri_1_input.png" alt="Robot's-eye RGB view of deformable poultry carcasses on the conveyor." class="active" />
+            <img src="assets/gtri/gtri_2_segmentation.png" alt="SAM2 instance segmentation producing 14 candidate carcass masks." />
+            <img src="assets/gtri/gtri_3_selection.png" alt="Ranker scores each candidate and selects the top-ranked pick." />
+            <img src="assets/gtri/gtri_6_outcome.png" alt="Outcome frame showing the executed pick attempt." />
+          </div>
+          <div class="paper__body">
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Colin Usher</p>
+            <p class="paper__desc">
+              We design a vision-based pick-selection system for deformable objects in high-throughput
+              settings that decouples perception from selection using three frozen foundation models —
+              SAM2 for instance segmentation, DINOv2 for visual embeddings augmented with geometric depth
+              features, and AnyGrasp for 6-DOF grasp generation. The only learned component is a lightweight
+              pairwise ranking MLP trained on VR operator demonstrations with a RankNet objective, and a
+              human-in-the-loop adaptation loop lets operator corrections continuously improve the ranker
+              without scheduled retraining.
+            </p>
+            <p class="paper__venue">In preparation. Target: ICRA 2027.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h3 class="paper__title">Imitation Learning from Deliberative Teachers</h3>
+          <div class="paper__media paper__media--placeholder">
+            <span>Media<br/>coming soon</span>
+          </div>
+          <div class="paper__body">
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Erdem Bıyık</p>
+            <p class="paper__desc">
+              Human demonstrators don't pick demonstrations at random — they teach. TV-BC (Teaching-Volume
+              Behavioral Cloning) exploits this by upweighting demonstrations where the learner's loss
+              exceeds the expert's, prioritizing hard, informative examples via a softmax-weighted BC loss
+              derived from machine teaching theory. On Procgen CoinRun, TV-BC improves early-round solve
+              rate by 21.7%, out-of-distribution performance by 16.7% at peak, and reduces cross-seed
+              variance by 4× over standard behavioral cloning.
+            </p>
+            <p class="paper__venue">In preparation. Target: ICLR 2027.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h3 class="paper__title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</h3>
+          <div class="paper__media paper__slideshow" data-interval="3500">
+            <img src="assets/swap/swap_1_title.png" alt="SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models." class="active" />
+            <img src="assets/swap/swap_2_method.png" alt="SWAP method: a routing critic trained with offline RL selects among candidate policies at each action chunk." />
+            <img src="assets/swap/swap_3_rollouts.png" alt="Real-robot SWAP rollouts on DROID for Marker to Bowl, Cube to Cup, and Cube on Cloth to Bowl." />
+          </div>
+          <div class="paper__body">
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, Abrar Anwar, Jesse Thomason</p>
+            <p class="paper__desc">
+              No single robot policy is best at every step of a manipulation task. SWAP dynamically composes
+              multiple VLA and control policies during execution: we formulate policy routing as an offline
+              reinforcement learning problem and train a routing critic that selects among π0, OpenVLA, and
+              keypoint-based controllers at each decision step. Evaluated on real-world DROID manipulation
+              tasks and LIBERO simulation, SWAP improves task success by up to 33% while reducing
+              successful-trajectory length by 28.3% versus fixed-policy and routing baselines.
+            </p>
+            <p class="paper__venue">Submitted to CoRL 2026.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h3 class="paper__title">DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents</h3>
+          <div class="paper__media">
+            <img src="assets/dips_architecture.png" alt="DiPS architecture: dialogue history is encoded, an IQL policy selector picks a persona, and an LLM generates the operator response, with an LLM judge monitoring the goal." />
+          </div>
+          <div class="paper__body">
+            <p class="paper__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, Abrar Anwar, Jesse Thomason, David Traum</p>
+            <p class="paper__desc">
+              LLMs struggle to persuade in high-stakes scenarios where one-size-fits-all strategies fail.
+              In a wildfire-evacuation domain, DiPS learns to dynamically select persuasion strategies as
+              the conversation evolves: an IQL-trained critic picks a persuasion policy at each turn from
+              the resident's recent utterances, which then conditions a RAG-augmented LLM response. DiPS
+              achieves higher evacuation success than zero-shot LLM and generic RAG baselines in both
+              simulated and real human interactions.
+            </p>
+            <p class="paper__venue">SIGDIAL 2026 — ACL/ISCA Special Interest Group on Discourse and Dialogue.</p>
+            <div class="paper__links">
+              <a href="https://arxiv.org/abs/2607.01557" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h3 class="paper__title">Hand Gesture Recognition using DenseNet201–Mediapipe Hybrid Modelling</h3>
+          <div class="paper__media paper__media--placeholder">
+            <span>Media<br/>coming soon</span>
+          </div>
+          <div class="paper__body">
+            <p class="paper__authors">Prachetas Padhi*, <strong>Mousumi Das</strong>*</p>
+            <p class="paper__desc">
+              A hybrid model combining DenseNet201 features with Mediapipe hand-landmark tracking for robust
+              hand gesture recognition, enabling reliable gesture-based interfaces for downstream
+              human-robot interaction applications.
+            </p>
+            <p class="paper__venue">IEEE, 2022.</p>
+            <div class="paper__links">
+              <a href="https://doi.org/10.1109/ICACRS55517.2022.10029038" target="_blank" rel="noopener">paper</a>
+            </div>
+          </div>
+        </article>
+
+        <p class="pub-note">* denotes equal contribution.</p>
+
+        <h3 class="research__subtitle research__subtitle--spaced">Interests</h3>
         <div class="cards research__interests">
           <article class="card">
             <div class="card__icon">🦾</div>
@@ -185,121 +293,7 @@
             <h3>Vision-Grounded Perception for Manipulation</h3>
             <p>Scalable perception pipelines spanning instance segmentation, conditioned image synthesis, and vision-language grounding for contact-rich robot tasks.</p>
           </article>
-          <article class="card">
-            <div class="card__icon">🧠</div>
-            <h3>Vision-Language Models &amp; VLAs</h3>
-            <p>Reliability of VLM/VLA backbones via hidden-state probing, lightweight evaluators, and behavior-grounded benchmarks.</p>
-          </article>
         </div>
-
-        <h3 class="research__subtitle">Papers</h3>
-
-        <article class="paper">
-          <div class="paper__media paper__media--placeholder">
-            <span>Media<br/>coming soon</span>
-          </div>
-          <div class="paper__body">
-            <h3 class="paper__title">Foundation-Model Pick Selection for Deformable Objects with Human-in-the-Loop Ranking</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, Colin Usher</p>
-            <p class="paper__desc">
-              We design a vision-based pick-selection system for deformable objects in high-throughput
-              settings that decouples perception from selection using three frozen foundation models —
-              SAM2 for instance segmentation, DINOv2 for visual embeddings augmented with geometric depth
-              features, and AnyGrasp for 6-DOF grasp generation. The only learned component is a lightweight
-              pairwise ranking MLP trained on VR operator demonstrations with a RankNet objective, and a
-              human-in-the-loop adaptation loop lets operator corrections continuously improve the ranker
-              without scheduled retraining.
-            </p>
-            <p class="paper__venue">In preparation. Target: ICRA 2027.</p>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper__media paper__media--placeholder">
-            <span>Media<br/>coming soon</span>
-          </div>
-          <div class="paper__body">
-            <h3 class="paper__title">Imitation Learning from Deliberative Teachers</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, Erdem Bıyık</p>
-            <p class="paper__desc">
-              Human demonstrators don't pick demonstrations at random — they teach. TV-BC (Teaching-Volume
-              Behavioral Cloning) exploits this by upweighting demonstrations where the learner's loss
-              exceeds the expert's, prioritizing hard, informative examples via a softmax-weighted BC loss
-              derived from machine teaching theory. On Procgen CoinRun, TV-BC improves early-round solve
-              rate by 21.7%, out-of-distribution performance by 16.7% at peak, and reduces cross-seed
-              variance by 4× over standard behavioral cloning.
-            </p>
-            <p class="paper__venue">In preparation. Target: ICLR 2027.</p>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper__media paper__slideshow" data-interval="3500">
-            <img src="assets/swap/swap_method.png" alt="SWAP method: a routing critic trained with offline RL selects among candidate policies at each action chunk." class="active" />
-            <img src="assets/swap/swap_motivation.png" alt="SWAP motivation: one robot, many policies — no single VLA wins everywhere." />
-            <img src="assets/swap/swap_experiments.png" alt="SWAP experiments on real-world DROID tasks and LIBERO simulation." />
-            <img src="assets/swap/swap_results.png" alt="SWAP results: 96.7% average real-robot task success and 28.3% fewer steps." />
-          </div>
-          <div class="paper__body">
-            <h3 class="paper__title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, Abrar Anwar, Jesse Thomason</p>
-            <p class="paper__desc">
-              No single robot policy is best at every step of a manipulation task. SWAP dynamically composes
-              multiple VLA and control policies during execution: we formulate policy routing as an offline
-              reinforcement learning problem and train a routing critic that selects among π0, OpenVLA, and
-              keypoint-based controllers at each decision step. Evaluated on real-world DROID manipulation
-              tasks and LIBERO simulation, SWAP improves task success by up to 33% while reducing
-              successful-trajectory length by 28.3% versus fixed-policy and routing baselines.
-            </p>
-            <p class="paper__venue">Submitted to CoRL 2026.</p>
-            <div class="paper__links">
-              <a href="https://docs.google.com/presentation/d/1zcmPom_cttSOBP1X3IaCDPUw5JX3CWwWUkZ3-EbBeXg/edit?usp=sharing" target="_blank" rel="noopener">slides</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper__media">
-            <img src="assets/dips_architecture.png" alt="DiPS architecture: dialogue history is encoded, an IQL policy selector picks a persona, and an LLM generates the operator response, with an LLM judge monitoring the goal." />
-          </div>
-          <div class="paper__body">
-            <h3 class="paper__title">DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents</h3>
-            <p class="paper__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, Abrar Anwar, Jesse Thomason, David Traum</p>
-            <p class="paper__desc">
-              LLMs struggle to persuade in high-stakes scenarios where one-size-fits-all strategies fail.
-              In a wildfire-evacuation domain, DiPS learns to dynamically select persuasion strategies as
-              the conversation evolves: an IQL-trained critic picks a persuasion policy at each turn from
-              the resident's recent utterances, which then conditions a RAG-augmented LLM response. DiPS
-              achieves higher evacuation success than zero-shot LLM and generic RAG baselines in both
-              simulated and real human interactions.
-            </p>
-            <p class="paper__venue">SIGDIAL 2026 — ACL/ISCA Special Interest Group on Discourse and Dialogue.</p>
-            <div class="paper__links">
-              <a href="https://arxiv.org/abs/2607.01557" target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper__media paper__media--placeholder">
-            <span>Media<br/>coming soon</span>
-          </div>
-          <div class="paper__body">
-            <h3 class="paper__title">Hand Gesture Recognition using DenseNet201–Mediapipe Hybrid Modelling</h3>
-            <p class="paper__authors">Prachetas Padhi*, <strong>Mousumi Das</strong>*</p>
-            <p class="paper__desc">
-              A hybrid model combining DenseNet201 features with Mediapipe hand-landmark tracking for robust
-              hand gesture recognition, enabling reliable gesture-based interfaces for downstream
-              human-robot interaction applications.
-            </p>
-            <p class="paper__venue">2022 International Conference on Automation, Computing and Renewable Systems (ICACRS), IEEE, 2022.</p>
-            <div class="paper__links">
-              <a href="https://doi.org/10.1109/ICACRS55517.2022.10029038" target="_blank" rel="noopener">paper</a>
-            </div>
-          </div>
-        </article>
-
-        <p class="pub-note">* denotes equal contribution.</p>
       </div>
     </section>
 

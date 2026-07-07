@@ -67,12 +67,7 @@ em { color: var(--accent); font-style: normal; }
   display: flex; align-items: center; justify-content: space-between;
   height: 64px;
 }
-.nav__brand {
-  font-family: "Space Grotesk"; font-weight: 700; font-size: 1.25rem;
-  color: var(--text);
-  width: 40px; height: 40px; display: grid; place-items: center;
-  border-radius: 10px; background: var(--accent-grad); color: #fff;
-}
+.nav__brand-spacer { width: 40px; }
 .nav__links { display: flex; gap: 1.4rem; }
 .nav__links a {
   color: var(--text-dim); font-weight: 500; font-size: 0.93rem;
@@ -213,13 +208,16 @@ em { color: var(--accent); font-style: normal; }
   font-size: 1.15rem; color: var(--text-dim); margin: 0 0 1.2rem;
   text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;
 }
-.research__interests { margin-bottom: 2.5rem; }
+.research__interests { margin-bottom: 0.5rem; }
+.research__subtitle--spaced { margin-top: 3rem; }
 
 .paper {
-  display: grid; grid-template-columns: 260px 1fr; gap: 1.5rem; align-items: start;
+  display: grid; grid-template-columns: 300px 1fr; column-gap: 1.5rem; row-gap: 0.7rem;
+  align-items: start;
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 1.5rem; transition: 0.25s;
 }
+.paper > .paper__title { grid-column: 1 / -1; margin-bottom: 0; }
 .paper + .paper { margin-top: 1.2rem; }
 .paper:hover { border-color: var(--accent); box-shadow: var(--shadow); }
 .paper__media {
