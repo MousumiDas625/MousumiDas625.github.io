@@ -48,7 +48,7 @@
 
   // --- Scroll reveal animation ---
   const revealEls = document.querySelectorAll(
-    ".section, .card, .tl-item, .paper, .news__item, .contact__card"
+    ".section, .card, .paper, .news__item, .contact__card"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
 
@@ -68,6 +68,19 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
+
+  // --- Paper media slideshows (auto-cycling slides) ---
+  document.querySelectorAll(".paper__slideshow").forEach(function (show) {
+    const slides = show.querySelectorAll("img");
+    if (slides.length < 2) return;
+    const interval = parseInt(show.dataset.interval, 10) || 3500;
+    let idx = 0;
+    setInterval(function () {
+      slides[idx].classList.remove("active");
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add("active");
+    }, interval);
+  });
 
   // --- Active nav link on scroll (scrollspy) ---
   const sections = document.querySelectorAll("section[id]");

@@ -24,10 +24,8 @@
     <div class="nav__inner">
       <a href="#top" class="nav__brand">MD</a>
       <nav class="nav__links" id="navLinks">
-        <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -61,9 +59,18 @@
           <a class="btn btn--ghost" href="assets/Mousumi_Das_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
         <div class="hero__links">
-          <a href="https://scholar.google.com/citations?user=vk9HwnEAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar">🎓 Google Scholar</a>
-          <a href="https://github.com/MousumiDas625" target="_blank" rel="noopener" title="GitHub">⌨ GitHub</a>
-          <a href="https://www.linkedin.com/in/mousumi-das-2a6135154/" target="_blank" rel="noopener" title="LinkedIn">in LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=vk9HwnEAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://github.com/MousumiDas625" target="_blank" rel="noopener" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mousumi-das-2a6135154/" target="_blank" rel="noopener" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
       <div class="hero__photo">
@@ -77,7 +84,7 @@
 
   <main>
     <!-- ===== About (no title) ===== -->
-    <section class="section" id="about">
+    <section class="section section--tight" id="about">
       <div class="container">
         <div class="about">
           <div class="about__text">
@@ -151,10 +158,41 @@
       </div>
     </section>
 
-    <!-- ===== Research (papers) ===== -->
+    <!-- ===== Research ===== -->
     <section class="section" id="research">
       <div class="container">
         <h2 class="section__title">Research</h2>
+
+        <h3 class="research__subtitle">Interests</h3>
+        <div class="cards research__interests">
+          <article class="card">
+            <div class="card__icon">🦾</div>
+            <h3>Robot Learning &amp; Imitation Learning</h3>
+            <p>Leveraging structure in expert demonstrations — pedagogical intent and per-example informativeness — for sample-efficient, OOD-robust manipulation policies.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔀</div>
+            <h3>VLA Composition &amp; Policy Routing</h3>
+            <p>Dynamically composing multiple VLA and control policies during execution via offline RL, with evaluation pipelines spanning tabletop and real-world manipulation.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🗣️</div>
+            <h3>Language-Guided Robotics &amp; Embodied AI</h3>
+            <p>Dialogue-driven, RAG-augmented, and language-conditioned policies for embodied decision-making, scene understanding, and vision-language navigation.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">👁️</div>
+            <h3>Vision-Grounded Perception for Manipulation</h3>
+            <p>Scalable perception pipelines spanning instance segmentation, conditioned image synthesis, and vision-language grounding for contact-rich robot tasks.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🧠</div>
+            <h3>Vision-Language Models &amp; VLAs</h3>
+            <p>Reliability of VLM/VLA backbones via hidden-state probing, lightweight evaluators, and behavior-grounded benchmarks.</p>
+          </article>
+        </div>
+
+        <h3 class="research__subtitle">Papers</h3>
 
         <article class="paper">
           <div class="paper__media paper__media--placeholder">
@@ -162,7 +200,7 @@
           </div>
           <div class="paper__body">
             <h3 class="paper__title">Foundation-Model Pick Selection for Deformable Objects with Human-in-the-Loop Ranking</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, <a href="https://fptd.gatech.edu/people/colin-usher" target="_blank" rel="noopener">Colin Usher</a></p>
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Colin Usher</p>
             <p class="paper__desc">
               We design a vision-based pick-selection system for deformable objects in high-throughput
               settings that decouples perception from selection using three frozen foundation models —
@@ -182,7 +220,7 @@
           </div>
           <div class="paper__body">
             <h3 class="paper__title">Imitation Learning from Deliberative Teachers</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Erdem Bıyık</a></p>
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Erdem Bıyık</p>
             <p class="paper__desc">
               Human demonstrators don't pick demonstrations at random — they teach. TV-BC (Teaching-Volume
               Behavioral Cloning) exploits this by upweighting demonstrations where the learner's loss
@@ -196,12 +234,15 @@
         </article>
 
         <article class="paper">
-          <div class="paper__media paper__media--placeholder">
-            <span>Slides / video<br/>coming soon</span>
+          <div class="paper__media paper__slideshow" data-interval="3500">
+            <img src="assets/swap/swap_method.png" alt="SWAP method: a routing critic trained with offline RL selects among candidate policies at each action chunk." class="active" />
+            <img src="assets/swap/swap_motivation.png" alt="SWAP motivation: one robot, many policies — no single VLA wins everywhere." />
+            <img src="assets/swap/swap_experiments.png" alt="SWAP experiments on real-world DROID tasks and LIBERO simulation." />
+            <img src="assets/swap/swap_results.png" alt="SWAP results: 96.7% average real-robot task success and 28.3% fewer steps." />
           </div>
           <div class="paper__body">
             <h3 class="paper__title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</h3>
-            <p class="paper__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, <a href="https://abraranwar.github.io/" target="_blank" rel="noopener">Abrar Anwar</a>, <a href="https://jessethomason.com/" target="_blank" rel="noopener">Jesse Thomason</a></p>
+            <p class="paper__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, Abrar Anwar, Jesse Thomason</p>
             <p class="paper__desc">
               No single robot policy is best at every step of a manipulation task. SWAP dynamically composes
               multiple VLA and control policies during execution: we formulate policy routing as an offline
@@ -211,6 +252,9 @@
               successful-trajectory length by 28.3% versus fixed-policy and routing baselines.
             </p>
             <p class="paper__venue">Submitted to CoRL 2026.</p>
+            <div class="paper__links">
+              <a href="https://docs.google.com/presentation/d/1zcmPom_cttSOBP1X3IaCDPUw5JX3CWwWUkZ3-EbBeXg/edit?usp=sharing" target="_blank" rel="noopener">slides</a>
+            </div>
           </div>
         </article>
 
@@ -220,7 +264,7 @@
           </div>
           <div class="paper__body">
             <h3 class="paper__title">DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents</h3>
-            <p class="paper__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, <a href="https://abraranwar.github.io/" target="_blank" rel="noopener">Abrar Anwar</a>, <a href="https://jessethomason.com/" target="_blank" rel="noopener">Jesse Thomason</a>, David Traum</p>
+            <p class="paper__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, Abrar Anwar, Jesse Thomason, David Traum</p>
             <p class="paper__desc">
               LLMs struggle to persuade in high-stakes scenarios where one-size-fits-all strategies fail.
               In a wildfire-evacuation domain, DiPS learns to dynamically select persuasion strategies as
@@ -259,65 +303,8 @@
       </div>
     </section>
 
-    <!-- ===== Experience ===== -->
-    <section class="section section--alt" id="experience">
-      <div class="container">
-        <h2 class="section__title">Research Experience</h2>
-        <div class="timeline">
-
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <div class="tl-head">
-                <h3>Research Intern — Georgia Tech Research Institute (GTRI)</h3>
-                <span class="tl-date">May 2026 – Present</span>
-              </div>
-              <p class="tl-org">Intelligent Robotics &amp; Autonomous Systems · PI: <a href="https://fptd.gatech.edu/people/colin-usher" target="_blank" rel="noopener">Colin Usher</a> · Atlanta, GA</p>
-              <ul>
-                <li>Designing a vision-based pick-selection system for deformable objects by decoupling perception from selection via three frozen foundation models: SAM2 (instance segmentation), DINOv2 (768-dim embeddings augmented with geometric depth features), and AnyGrasp (6-DOF grasp generation).</li>
-                <li>Trained a pairwise ranking MLP via a RankNet objective on VR operator demonstrations as the sole learned component; deployed with a human-in-the-loop adaptation loop where corrections trigger lightweight ranker updates over a rolling replay buffer, enabling environment-agnostic continuous improvement without scheduled retraining.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <div class="tl-head">
-                <h3>Research Assistant — LIRA Lab</h3>
-                <span class="tl-date">Jan 2026 – Present</span>
-              </div>
-              <p class="tl-org"><a href="https://liralab.usc.edu/" target="_blank" rel="noopener">Learning &amp; Interactive Robot Autonomy Lab</a> · PI: <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Erdem Bıyık</a> · USC</p>
-              <ul>
-                <li>Developing TV-BC (Teaching-Volume Behavioral Cloning), an imitation learning method that upweights demonstrations where learner loss exceeds expert loss, prioritizing hard, informative examples via a softmax-weighted BC loss derived from machine teaching theory.</li>
-                <li>Evaluated TV-BC vs. standard BC on three Procgen CoinRun settings (single-level, in-distribution, OOD) using an IMPALA ResNet expert and a 373K-parameter CNN learner; achieved +21.7% early-round solve-rate gain, +16.7% OOD advantage at peak, 4× lower cross-seed variance in OOD, and winning all 3 seeds at the final in-distribution round.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <div class="tl-head">
-                <h3>Research Assistant — GLAMOR Lab</h3>
-                <span class="tl-date">Jun 2025 – Present</span>
-              </div>
-              <p class="tl-org"><a href="https://glamor-usc.github.io/" target="_blank" rel="noopener">Grounding Language in Actions, Multimodal Observations &amp; Robots</a> · PI: <a href="https://jessethomason.com/" target="_blank" rel="noopener">Jesse Thomason</a> · USC</p>
-              <ul>
-                <li>Designed SWAP (Stepwise Action Policy Routing) for dynamically composing multiple VLA policies during execution; formulated routing as offline RL, training a routing critic that selects among π0, OpenVLA, and keypoint-based controllers per decision step. Evaluated on real-world DROID and LIBERO; up to +33% task success and −28.3% trajectory length vs. fixed-policy and routing baselines.</li>
-                <li>Built the multi-policy evaluation infrastructure for tabletop manipulation on the LIBERO benchmark with real-world deployment on the Franka Panda arm; integrated contrast-set perturbations and conformal prediction to improve hidden-state probe failure detection under deployment-time distribution shifts.</li>
-                <li>Developed a real-time policy selection algorithm using Implicit Q-Learning (IQL) for adaptive operator decision-making during wildfire evacuation dialogues; outperformed random and fixed-policy baselines across diverse resident profiles.</li>
-                <li>Designed a context-aware RAG module conditioning response generation on dialogue history via SBERT embeddings, FAISS retrieval, and instruction-tuned LLaMA-3; integrated end-to-end so dialogue outcomes trigger evacuation decisions and emergency dispatch.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ===== Projects ===== -->
-    <section class="section" id="projects">
+    <section class="section section--alt" id="projects">
       <div class="container">
         <h2 class="section__title">Selected Projects</h2>
         <div class="cards cards--3">
@@ -351,7 +338,7 @@
     </section>
 
     <!-- ===== Contact ===== -->
-    <section class="section section--alt" id="contact">
+    <section class="section" id="contact">
       <div class="container contact">
         <h2 class="section__title">Get in Touch</h2>
         <p class="contact__lead">
