@@ -83,5 +83,6 @@ python3 -m http.server 8000
   at the very top (`:root { ... }`) to recolor the whole site instantly.
 - **Behavior (theme, menu, animations):** `js/main.js`.
 
-To add a new publication, copy an existing `.pub` block. To add a project,
-copy a `.card--project` block. To add an experience, copy a `.tl-item` block.
+To add a new paper, copy an existing `.paper` block in the Research section.
+To add a news item, copy a `.news__item` block. To add a project, copy a
+`.card--project` block. To add an experience, copy a `.tl-item` block.

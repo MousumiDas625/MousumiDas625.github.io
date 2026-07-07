@@ -48,7 +48,7 @@
 
   // --- Scroll reveal animation ---
   const revealEls = document.querySelectorAll(
-    ".section, .card, .tl-item, .pub, .contact__card, .edu"
+    ".section, .card, .tl-item, .paper, .news__item, .contact__card"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
 
