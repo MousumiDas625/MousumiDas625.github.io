@@ -217,20 +217,24 @@ em { color: var(--accent); font-style: normal; }
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 1.5rem; transition: 0.25s;
 }
-.paper > .paper__title { grid-column: 1 / -1; margin-bottom: 0; }
+.paper > .paper__title { grid-column: 1 / -1; margin-bottom: 0; text-align: left; }
 .paper + .paper { margin-top: 1.2rem; }
 .paper:hover { border-color: var(--accent); box-shadow: var(--shadow); }
 .paper__media {
+  align-self: center; margin-top: 0.4rem;
   border-radius: 12px; overflow: hidden; background: var(--surface-2);
   border: 1px solid var(--border);
 }
-.paper__media img { display: block; width: 100%; height: auto; }
+.paper__media img,
+.paper__media video { display: block; width: 100%; height: auto; }
 .paper__slideshow { position: relative; aspect-ratio: 16 / 9; }
-.paper__slideshow img {
+.paper__slideshow img,
+.paper__slideshow video {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
   opacity: 0; transition: opacity 0.8s ease;
 }
-.paper__slideshow img.active { opacity: 1; }
+.paper__slideshow img.active,
+.paper__slideshow video.active { opacity: 1; }
 .paper__media--placeholder {
   display: grid; place-items: center; min-height: 140px; text-align: center;
   color: var(--text-faint); font-size: 0.85rem; font-weight: 500;

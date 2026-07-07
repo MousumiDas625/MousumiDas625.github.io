@@ -69,17 +69,44 @@
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
 
-  // --- Paper media slideshows (auto-cycling slides) ---
+  // --- Paper media slideshows (auto-cycling images + videos) ---
   document.querySelectorAll(".paper__slideshow").forEach(function (show) {
-    const slides = show.querySelectorAll("img");
+    const slides = Array.prototype.filter.call(show.children, function (el) {
+      return el.tagName === "IMG" || el.tagName === "VIDEO";
+    });
     if (slides.length < 2) return;
-    const interval = parseInt(show.dataset.interval, 10) || 3500;
+    const interval = parseInt(show.dataset.interval, 10) || 3000;
     let idx = 0;
-    setInterval(function () {
-      slides[idx].classList.remove("active");
+    let timer = null;
+
+    function advance() {
       idx = (idx + 1) % slides.length;
-      slides[idx].classList.add("active");
-    }, interval);
+      activate(idx);
+    }
+
+    function activate(i) {
+      if (timer) { clearTimeout(timer); timer = null; }
+      slides.forEach(function (s, k) {
+        s.classList.toggle("active", k === i);
+        if (s.tagName === "VIDEO" && k !== i) { s.pause(); }
+      });
+      const el = slides[i];
+      if (el.tagName === "VIDEO") {
+        // Video advances when it finishes playing.
+        try { el.currentTime = 0; } catch (e) {}
+        const p = el.play();
+        if (p && p.catch) { p.catch(function () { timer = setTimeout(advance, interval); }); }
+      } else {
+        // Images (non-video slides) hold for the configured gap.
+        timer = setTimeout(advance, interval);
+      }
+    }
+
+    slides.forEach(function (el) {
+      if (el.tagName === "VIDEO") { el.addEventListener("ended", advance); }
+    });
+
+    activate(0);
   });
 
   // --- Active nav link on scroll (scrollspy) ---
