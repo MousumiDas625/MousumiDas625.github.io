@@ -47,7 +47,7 @@
         <h1 class="hero__name">Mousumi Das</h1>
         <p class="hero__email"><a href="mailto:mousumid@usc.edu">mousumid@usc.edu</a></p>
         <p class="hero__tagline">
-          Building embodied agents that don't just imitate demonstrations, but reason about
+          Building embodied agents that reason about
           <em>which demonstrations to trust</em> and <em>which policy to run next</em>.
         </p>
         <p class="hero__sub">
@@ -106,7 +106,7 @@
             </p>
             <p>
               I'm most excited about where this goes next: robots that adapt on their own, from
-              interaction rather than fresh supervision.
+              interaction rather than new supervision.
             </p>
           </div>
           <aside class="about__facts">
@@ -172,13 +172,9 @@
             <h3 class="paper__title">Foundation-Model Pick Selection for Deformable Objects with Human-in-the-Loop Ranking</h3>
             <p class="paper__authors"><strong>Mousumi Das</strong>, Colin Usher</p>
             <p class="paper__desc">
-              We design a vision-based pick-selection system for deformable objects in high-throughput
-              settings that decouples perception from selection using three frozen foundation models —
-              SAM2 for instance segmentation, DINOv2 for visual embeddings augmented with geometric depth
-              features, and AnyGrasp for 6-DOF grasp generation. The only learned component is a lightweight
-              pairwise ranking MLP trained on VR operator demonstrations with a RankNet objective, and a
-              human-in-the-loop adaptation loop lets operator corrections continuously improve the ranker
-              without scheduled retraining.
+              Which object should a robot pick when many are cluttered together? We learn a pick ranker
+              from operator demonstrations that keeps improving from human corrections at deployment, on
+              top of frozen perception and grasping foundation models.
             </p>
             <p class="paper__venue">In preparation. Target: ICRA 2027.</p>
           </div>
@@ -192,12 +188,9 @@
             <h3 class="paper__title">Imitation Learning from Deliberative Teachers</h3>
             <p class="paper__authors"><strong>Mousumi Das</strong>, Erdem Bıyık</p>
             <p class="paper__desc">
-              Human demonstrators don't pick demonstrations at random — they teach. TV-BC (Teaching-Volume
-              Behavioral Cloning) exploits this by upweighting demonstrations where the learner's loss
-              exceeds the expert's, prioritizing hard, informative examples via a softmax-weighted BC loss
-              derived from machine teaching theory. On Procgen CoinRun, TV-BC improves early-round solve
-              rate by 21.7%, out-of-distribution performance by 16.7% at peak, and reduces cross-seed
-              variance by 4× over standard behavioral cloning.
+              Human demonstrators don't act randomly — they teach. TV-BC upweights the hard, informative
+              demonstrations a teacher would emphasize, learning more sample-efficiently and generalizing
+              better out-of-distribution than standard behavioral cloning.
             </p>
             <p class="paper__venue">In preparation. Target: ICLR 2027.</p>
           </div>
@@ -211,12 +204,9 @@
             <h3 class="paper__title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</h3>
             <p class="paper__authors"><strong>Mousumi Das</strong>, Aditeya Prajapati, Abrar Anwar, Jesse Thomason</p>
             <p class="paper__desc">
-              No single robot policy is best at every step of a manipulation task. SWAP dynamically composes
-              multiple VLA and control policies during execution: we formulate policy routing as an offline
-              reinforcement learning problem and train a routing critic that selects among π0, OpenVLA, and
-              keypoint-based controllers at each decision step. Evaluated on real-world DROID manipulation
-              tasks and LIBERO simulation, SWAP improves task success by up to 33% while reducing
-              successful-trajectory length by 28.3% versus fixed-policy and routing baselines.
+              No single policy is best at every step of a task. SWAP learns to switch between
+              vision-language-action policies mid-rollout, improving real-robot success by up to 33% over
+              the best fixed policy.
             </p>
             <p class="paper__venue">Submitted to CoRL 2026.</p>
           </div>
@@ -230,12 +220,9 @@
             <h3 class="paper__title">DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents</h3>
             <p class="paper__authors">Tianyi Zhang*, <strong>Mousumi Das</strong>*, Abrar Anwar, Jesse Thomason, David Traum</p>
             <p class="paper__desc">
-              LLMs struggle to persuade in high-stakes scenarios where one-size-fits-all strategies fail.
-              In a wildfire-evacuation domain, DiPS learns to dynamically select persuasion strategies as
-              the conversation evolves: an IQL-trained critic picks a persuasion policy at each turn from
-              the resident's recent utterances, which then conditions a RAG-augmented LLM response. DiPS
-              achieves higher evacuation success than zero-shot LLM and generic RAG baselines in both
-              simulated and real human interactions.
+              Persuasion isn't one-size-fits-all. In a wildfire-evacuation setting, DiPS learns to pick
+              the right persuasion strategy turn-by-turn, outperforming zero-shot and RAG baselines with
+              both simulated and real people.
             </p>
             <p class="paper__venue">SIGDIAL 2026.</p>
             <div class="paper__links">
@@ -252,11 +239,9 @@
             <h3 class="paper__title">Hand Gesture Recognition using DenseNet201–Mediapipe Hybrid Modelling</h3>
             <p class="paper__authors">Prachetas Padhi*, <strong>Mousumi Das</strong>*</p>
             <p class="paper__desc">
-              A hybrid model combining DenseNet201 features with Mediapipe hand-landmark tracking for robust
-              hand gesture recognition, enabling reliable gesture-based interfaces for downstream
-              human-robot interaction applications.
+              A hybrid DenseNet201 + Mediapipe model for robust hand-gesture recognition.
             </p>
-            <p class="paper__venue">IEEE, 2022.</p>
+            <p class="paper__venue">ICACRS, IEEE 2022.</p>
             <div class="paper__links">
               <a href="https://doi.org/10.1109/ICACRS55517.2022.10029038" target="_blank" rel="noopener">paper</a>
             </div>
@@ -269,23 +254,23 @@
         <div class="cards research__interests">
           <article class="card">
             <div class="card__icon">🦾</div>
-            <h3>Robot Learning &amp; Imitation Learning</h3>
-            <p>Leveraging structure in expert demonstrations — pedagogical intent and per-example informativeness — for sample-efficient, OOD-robust manipulation policies.</p>
+            <h3>Imitation Learning</h3>
+            <p>Sample-efficient learning from demonstrations that generalizes out-of-distribution.</p>
           </article>
           <article class="card">
             <div class="card__icon">🔀</div>
-            <h3>VLA Composition &amp; Policy Routing</h3>
-            <p>Dynamically composing multiple VLA and control policies during execution via offline RL, with evaluation pipelines spanning tabletop and real-world manipulation.</p>
+            <h3>VLA Compositionality</h3>
+            <p>Composing and routing vision-language-action policies at execution time.</p>
           </article>
           <article class="card">
             <div class="card__icon">🗣️</div>
-            <h3>Language-Guided Robotics &amp; Embodied AI</h3>
-            <p>Dialogue-driven, RAG-augmented, and language-conditioned policies for embodied decision-making, scene understanding, and vision-language navigation.</p>
+            <h3>Language-Guided Robotics</h3>
+            <p>Language-conditioned policies for embodied decision-making and interaction.</p>
           </article>
           <article class="card">
             <div class="card__icon">👁️</div>
-            <h3>Vision-Grounded Perception for Manipulation</h3>
-            <p>Scalable perception pipelines spanning instance segmentation, conditioned image synthesis, and vision-language grounding for contact-rich robot tasks.</p>
+            <h3>Perception for Manipulation</h3>
+            <p>Grounded perception with foundation models for contact-rich manipulation.</p>
           </article>
         </div>
       </div>
