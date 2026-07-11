@@ -211,6 +211,14 @@ em { color: var(--accent); font-style: normal; }
 .research__interests { margin-bottom: 0.5rem; }
 .research__subtitle--spaced { margin-top: 3rem; }
 
+.research__interests-list {
+  list-style: disc; padding-left: 1.4rem; margin: 0; max-width: 70ch;
+}
+.research__interests-list li {
+  margin-bottom: 0.55rem; line-height: 1.6; color: var(--text-dim);
+}
+.research__interests-list li strong { color: var(--text); }
+
 .paper {
   display: grid; grid-template-columns: 300px 1fr; column-gap: 1.5rem;
   align-items: center;
