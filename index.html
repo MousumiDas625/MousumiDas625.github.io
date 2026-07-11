@@ -289,10 +289,22 @@
 
         <h3 class="research__subtitle research__subtitle--spaced">Interests</h3>
         <ul class="research__interests-list">
-          <li><strong>Imitation Learning</strong> — sample-efficient learning from demonstrations that generalizes out-of-distribution.</li>
-          <li><strong>VLA Compositionality</strong> — composing and routing vision-language-action policies at execution time.</li>
-          <li><strong>Language-Guided Robotics</strong> — language-conditioned policies for embodied decision-making and interaction.</li>
-          <li><strong>Perception for Manipulation</strong> — grounded perception with foundation models for contact-rich manipulation.</li>
+          <li>
+            <span class="interest__term">Imitation Learning</span>
+            <span class="interest__desc">Sample-efficient learning from demonstrations that generalizes out-of-distribution.</span>
+          </li>
+          <li>
+            <span class="interest__term">VLA Compositionality</span>
+            <span class="interest__desc">Composing and routing vision-language-action policies at execution time.</span>
+          </li>
+          <li>
+            <span class="interest__term">Language-Guided Robotics</span>
+            <span class="interest__desc">Language-conditioned policies for embodied decision-making and interaction.</span>
+          </li>
+          <li>
+            <span class="interest__term">Perception for Manipulation</span>
+            <span class="interest__desc">Grounded perception with foundation models for contact-rich manipulation.</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -305,26 +317,20 @@
           <article class="card card--project">
             <div class="card__tag">Legged Locomotion · Granular Media</div>
             <h3>Stride Amplitude for Quadruped Sand-Slope Climbing</h3>
-            <p>Pushing a leg harder into sand doesn't always climb faster. On a custom 2-DoF-per-leg quadruped (Dynamixel XL-320, crawl gait) and an adjustable granular ramp, I swept stride amplitude and slope angle to map how leg intrusion trades off against substrate stability, uncovering a non-monotonic optimum where moderate strides generate thrust without triggering the over-intrusion that avalanches sand downhill.</p>
-            <ul class="card__metrics">
-              <li><strong>up to 3×</strong> uphill displacement over baseline at the optimal stride amplitude; bell-curve relationship robust across 15° and 20° slopes</li>
-            </ul>
+            <p>Pushing a leg harder into sand doesn't always climb faster. On a custom 2-DoF-per-leg quadruped and an adjustable sand ramp, I swept stride amplitude against slope to find a sweet spot where moderate strides gain traction without avalanching the substrate, tripling uphill displacement over the baseline.</p>
           </article>
 
           <article class="card card--project">
             <div class="card__tag">Robotics · ASR · Vision</div>
             <h3>Voice &amp; Vision Controlled Robotic Hand</h3>
-            <p>A robotic-hand interface that combines automatic speech recognition for voice control with Mediapipe landmark tracking for real-time gesture replication. Finger-joint angles are encoded into servo commands on a microcontroller, achieving sub-100 ms end-to-end latency from input to actuation.</p>
+            <p>A robotic hand that mirrors a user in real time using two input modes at once: speech recognition for voice commands and Mediapipe landmark tracking for live gesture replication. Detected finger-joint angles map to servo commands on a microcontroller, keeping end-to-end latency under 100 ms.</p>
             <span class="card__date">Jan 2023 – Mar 2023</span>
           </article>
 
           <article class="card card--project">
             <div class="card__tag">Multi-Robot · Computer Vision</div>
             <h3>Automated Sortation of Packages in a Warehouse</h3>
-            <p>A swarm of mobile robots, tracked via ArUco markers and an overhead camera, coordinates package sorting through A* path planning with routing commands relayed over WiFi to onboard microcontrollers.</p>
-            <ul class="card__metrics">
-              <li><strong>35%</strong> faster sort cycles vs. fixed-route baseline</li>
-            </ul>
+            <p>A swarm of mobile robots sorts packages under an overhead camera, each one tracked by its own ArUco marker. A central planner assigns A* routes and relays them over WiFi to onboard microcontrollers, cutting sort-cycle time by 35% against a fixed-route baseline.</p>
             <span class="card__date">Oct 2021 – Jan 2022</span>
           </article>
         </div>
