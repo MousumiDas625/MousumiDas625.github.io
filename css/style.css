@@ -212,31 +212,12 @@ em { color: var(--accent); font-style: normal; }
 .research__subtitle--spaced { margin-top: 3rem; }
 
 .research__interests-list {
-  list-style: none; padding: 0; margin: 0;
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem;
+  list-style: disc; padding-left: 1.4rem; margin: 0; max-width: 70ch;
 }
 .research__interests-list li {
-  position: relative;
-  padding: 0.9rem 1rem 0.9rem 2.2rem;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; transition: 0.2s;
+  margin-bottom: 0.55rem; line-height: 1.6; color: var(--text-dim);
 }
-.research__interests-list li:hover {
-  border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow);
-}
-.research__interests-list li::before {
-  content: ""; position: absolute; left: 1rem; top: 1.15rem;
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent);
-}
-.interest__term {
-  display: block; color: var(--text); font-weight: 600; margin-bottom: 0.2rem;
-}
-.interest__desc { display: block; color: var(--text-dim); font-size: 0.92rem; line-height: 1.5; }
-
-@media (max-width: 640px) {
-  .research__interests-list { grid-template-columns: 1fr; }
-}
+.research__interests-list li strong { color: var(--text); }
 
 .paper {
   display: grid; grid-template-columns: 300px 1fr; column-gap: 1.5rem;
