@@ -125,6 +125,7 @@ em { color: var(--accent); font-style: normal; }
 .btn--ghost { background: var(--surface); border-color: var(--border); color: var(--text); }
 .btn--ghost:hover { border-color: var(--accent); transform: translateY(-2px); }
 .hero__links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 0.6rem; }
+.hero__links-break { flex-basis: 100%; height: 0; }
 .hero__links a {
   display: inline-flex; align-items: center; gap: 0.4rem;
   color: var(--text-dim); font-size: 0.92rem; font-weight: 500; transition: 0.2s;
